@@ -1,0 +1,10 @@
+body {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(135deg, #8ec5fc 1%, #e0c3fc 94%);
+  margin: 40px;
+}
+
+.button{
+    background: rgb(248, 172, 32);
+    border: none;
+}
