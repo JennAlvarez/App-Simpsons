@@ -33,7 +33,7 @@ import { useEffect, useState } from "react";
         <img src={titulo} alt="homero simpsons" className="w-100"/>
         </div>
         <div className="text-center">
-          <Button type="submit" className="button mb-5" variant="warning">Obtener frase</Button>
+          <Button type="submit" className="button mb-5" variant="warning" onClick={consultarApi}>Obtener frase</Button>
         </div>
         <Frase personaje={personaje}></Frase>
       </Container>

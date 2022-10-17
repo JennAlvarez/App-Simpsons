@@ -1,23 +1,20 @@
 import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
-import Homero from "../img/homero.png";
 
-const Frase = () => {
+const Frase = ({personaje}) => {
   return (
     <Card>
       <Card.Body>
       <Row>
         <Col md={4}>
-          <img src={Homero} alt='homero' className="w-100"/>
+          <img src={personaje.image} alt={personaje.character} className="w-100"/>
         </Col>
         <Col md={8}>
           <Card.Title>
-            <h3>Homer Simpsons</h3>
+            <h3>{personaje.character}</h3>
           </Card.Title>
           <Card.Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            dolorum, facilis ducimus recusandae exercitationem nemo eum
-            laudantium laboriosam culpa harum.
+            {personaje.quote}
           </Card.Text>
         </Col>
       </Row>
